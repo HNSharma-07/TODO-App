@@ -80,19 +80,27 @@
       </form>
 
       <div id="tasks">
-        <div>
-          <span class="fw-bold">Task 1</span>
-          <span class="small text-secondary">2024-01-01</span>
-          <p>Join the gym</p>
-          <span class="options">
-            <i
-              onclick="editTask(this)"
-              data-bs-toggle="modal"
-              data-bs-target="#form"
-              class="fa-solid fa-pen-to-square"
-            ></i>
-            <i onclick="deleteTask(this)" class="fa-solid fa-trash-can"></i>
-          </span>
+        <!-- <div>
+          <div>
+            <span class="brief">
+              <input class="check" type="checkbox" name="" id="" />
+              <span class="taskTitle fw-bold">Task 1</span>
+              <i class="fa-solid fa-caret-down icon"></i>
+            </span>
+          </div>
+          <div class="more">
+            <span class="small text-secondary">2024-01-01</span>
+            <p>Join the gym</p>
+            <span class="options">
+              <i
+                onclick="editTask(this)"
+                data-bs-toggle="modal"
+                data-bs-target="#form"
+                class="fa-solid fa-pen-to-square"
+              ></i>
+              <i onclick="deleteTask(this)" class="fa-solid fa-trash-can"></i>
+            </span>
+          </div>
         </div>
         <div>
           <span class="fw-bold">Task 2</span>
@@ -107,7 +115,7 @@
             ></i>
             <i onclick="deleteTask(this)" class="fa-solid fa-trash-can"></i>
           </span>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -121,5 +129,31 @@
       crossorigin="anonymous"
     ></script>
     <script src="./main.js"></script>
+    <!-- <script>
+      const icon = document.querySelector(".icon");
+      const more = document.querySelector(".more");
+      const check = document.querySelector(".check");
+      const taskTitle = document.querySelector(".taskTitle");
+
+      check.addEventListener("change", () => {
+        if (check.checked) {
+          // line
+          taskTitle.style.textDecoration = "line-through";
+        } else {
+          // no line
+          taskTitle.style.textDecoration = "none";
+        }
+      });
+
+      icon.addEventListener("click", () => {
+        if (icon.classList.contains("active")) {
+          icon.classList.remove("active");
+          more.style.display = "none";
+        } else {
+          icon.classList.add("active");
+          more.style.display = "block";
+        }
+      });
+    </script> -->
   </body>
 </html>
