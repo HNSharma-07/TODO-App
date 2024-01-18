@@ -10,7 +10,7 @@ Learning CRUD Operations in JavaScript by building basic TODO APP.
 
 **Creadit:** Thanks to <a href="https://www.freecodecamp.org/">FreeCodeCamp</a> for teaching me CRUD operations in JavaScript.</br>
 </br>
-**Bonus:** Added Checkmark and toggle button feature with myself </br> [**Learning:** event handling on synamically generated element, checkbox and button]
+**Bonus:** Added Checkmark and toggle button feature with myself </br> [**Learning:** event handling on dynamically generated element, checkbox and button]
 <hr>
 
 - check out: https://hnsharma-07.github.io/TODO-App/
